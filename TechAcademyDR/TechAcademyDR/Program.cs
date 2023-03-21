@@ -4,7 +4,7 @@ namespace TechAcademyDR
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] arg)
         {
             //Opening lines
             Console.WriteLine("The Tech Academy");

@@ -1,0 +1,7 @@
+C:\Users\15415\Documents\GitHub\C-sharp-and-Unity-Projects\TechAcademyDR\TechAcademyDR\bin\Debug\TechAcademyDR.exe.config
+C:\Users\15415\Documents\GitHub\C-sharp-and-Unity-Projects\TechAcademyDR\TechAcademyDR\bin\Debug\TechAcademyDR.exe
+C:\Users\15415\Documents\GitHub\C-sharp-and-Unity-Projects\TechAcademyDR\TechAcademyDR\bin\Debug\TechAcademyDR.pdb
+C:\Users\15415\Documents\GitHub\C-sharp-and-Unity-Projects\TechAcademyDR\TechAcademyDR\obj\Debug\TechAcademyDR.csproj.AssemblyReference.cache
+C:\Users\15415\Documents\GitHub\C-sharp-and-Unity-Projects\TechAcademyDR\TechAcademyDR\obj\Debug\TechAcademyDR.csproj.CoreCompileInputs.cache
+C:\Users\15415\Documents\GitHub\C-sharp-and-Unity-Projects\TechAcademyDR\TechAcademyDR\obj\Debug\TechAcademyDR.exe
+C:\Users\15415\Documents\GitHub\C-sharp-and-Unity-Projects\TechAcademyDR\TechAcademyDR\obj\Debug\TechAcademyDR.pdb
