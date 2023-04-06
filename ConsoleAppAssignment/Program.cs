@@ -52,58 +52,73 @@ class Program
         //    y++;
         //}
 
-        //This lets a user input text to search a list and see the index
-        string[] petArray = { "zero", "dog", "cat", "fish", "bird", "rabbit", "guinea pig", "turtle", "hamster", "lizard", "ferret" };
-        Console.WriteLine("Type a pet to see where it is in the popular pet list:");
-        string petChoice = Console.ReadLine();
+        ////This lets a user input text to search a list and see the index
+        //string[] petArray = { "zero", "dog", "cat", "fish", "bird", "rabbit", "guinea pig", "turtle", "hamster", "lizard", "ferret" };
+        //Console.WriteLine("Type a pet to see where it is in the popular pet list:");
+        //string petChoice = Console.ReadLine();
 
-        bool match = false;
+        //bool match = false;
 
-        for (int i = 0; i < petArray.Length; i++)
-        {
-            if (petArray[i] == petChoice)
-            {
-                match = true;
-                int index = Array.IndexOf(petArray, petChoice);
-                Console.WriteLine("This is " + index + " on the list!");
-                break;
-            }
-        }
-        if (match == false)
-        {
-            Console.WriteLine("This is not on the list!");
-        }
-
-        //Below is my attempt at part 5 of this assignment
-
-        //string[] MatchArray = { "hello", "couch", "cupcake", "lemon", "duplicate", "candle"};
-        //Console.WriteLine("Typing \'dupilicate\' will show both indices where it appears on the list:");
-        //string MatchChoice = Console.ReadLine();
-
-        //bool matching = false;
-
-        //for (int i = 0; i <= MatchArray.Length; i++)
+        //for (int i = 0; i < petArray.Length; i++)
         //{
-        //    if (MatchArray[i] == MatchChoice)
+        //    if (petArray[i] == petChoice)
         //    {
-        //        matching = true;
-        //        int index = Array.IndexOf(MatchArray, MatchChoice);
+        //        match = true;
+        //        int index = Array.IndexOf(petArray, petChoice);
         //        Console.WriteLine("This is " + index + " on the list!");
+        //        break;
         //    }
         //}
-        //if (matching == false)
+        //if (match == false)
         //{
-        //    Console.WriteLine("This is not a duplicate!");
+        //    Console.WriteLine("This is not on the list!");
         //}
 
-        string[] List = { "entry 1", "entry 2", "entry 3", "entry 4", "entry 5", "entry 2"};
+        ////Below is my attempt at part 5 of this assignment
 
-        foreach (string entry in List)
+        ////string[] MatchArray = { "hello", "couch", "cupcake", "lemon", "duplicate", "candle"};
+        ////Console.WriteLine("Typing \'dupilicate\' will show both indices where it appears on the list:");
+        ////string MatchChoice = Console.ReadLine();
+
+        ////bool matching = false;
+
+        ////for (int i = 0; i <= MatchArray.Length; i++)
+        ////{
+        ////    if (MatchArray[i] == MatchChoice)
+        ////    {
+        ////        matching = true;
+        ////        int index = Array.IndexOf(MatchArray, MatchChoice);
+        ////        Console.WriteLine("This is " + index + " on the list!");
+        ////    }
+        ////}
+        ////if (matching == false)
+        ////{
+        ////    Console.WriteLine("This is not a duplicate!");
+        ////}
+
+        string[] MatchArray = { "hello", "couch", "cupcake", "lemon", "duplicate", "candle" };
+        Console.WriteLine("Typing \'dupilicate\' will show both indices where it appears on the list:");
+        string MatchChoice = Console.ReadLine();
+
+        foreach (string dupe in MatchArray)
         {
-            Console.WriteLine(entry + " has not appeared in the list yet!");
+            if (dupe == MatchChoice)
+            {
+                int index = Array.IndexOf(MatchArray, MatchChoice);
+                Console.WriteLine("This is in index " + index);
+                continue;
+            }
         }
-
         Console.ReadLine();
+
+        //string[] List = { "entry 1", "entry 2", "entry 3", "entry 4", "entry 5", "entry 2"};
+
+        //foreach (string entry in List)
+        //{
+        //    Console.WriteLine(entry + " has not appeared in the list yet!");
+        //}
+
+        //Console.ReadLine();
     }
 }
 
