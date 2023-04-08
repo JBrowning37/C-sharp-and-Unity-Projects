@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+
+
 
 
 
@@ -74,51 +77,46 @@ class Program
         //    Console.WriteLine("This is not on the list!");
         //}
 
-        ////Below is my attempt at part 5 of this assignment
+        //Below is my first attempt at part 5 of this assignment
 
-        ////string[] MatchArray = { "hello", "couch", "cupcake", "lemon", "duplicate", "candle"};
-        ////Console.WriteLine("Typing \'dupilicate\' will show both indices where it appears on the list:");
-        ////string MatchChoice = Console.ReadLine();
+        //string[] MatchArray = { "hello", "couch", "cupcake", "lemon", "duplicate", "candle", "duplicate" };
+        //Console.WriteLine("Typing \'dupilicate\' will show both indices where it appears on the list:");
+        //string MatchChoice = Console.ReadLine();
 
-        ////bool matching = false;
+        //bool matching = false;
 
-        ////for (int i = 0; i <= MatchArray.Length; i++)
-        ////{
-        ////    if (MatchArray[i] == MatchChoice)
-        ////    {
-        ////        matching = true;
-        ////        int index = Array.IndexOf(MatchArray, MatchChoice);
-        ////        Console.WriteLine("This is " + index + " on the list!");
-        ////    }
-        ////}
-        ////if (matching == false)
-        ////{
-        ////    Console.WriteLine("This is not a duplicate!");
-        ////}
+        //for (int i = 0; i < MatchArray.Length; i++)
+        //{
+        //    if (MatchArray[i] == MatchChoice)
+        //    {
+        //        matching = true;
+        //        Console.WriteLine("This is " + i + " on the list!");
+        //    }
+        //}
+        //if (matching == false)
+        //{
+        //    Console.WriteLine("This is not a duplicate!");
+        //}
+        //Console.ReadLine();
 
-        string[] MatchArray = { "hello", "couch", "cupcake", "lemon", "duplicate", "candle" };
-        Console.WriteLine("Typing \'dupilicate\' will show both indices where it appears on the list:");
-        string MatchChoice = Console.ReadLine();
 
-        foreach (string dupe in MatchArray)
+
+        List<string> List1 = new List<string>(){ "entry 1", "entry 2", "entry 3", "entry 4", "entry 5", "entry 2"};
+        List<string> List2 = new List<string>();
+
+        foreach (string entry in List1)
         {
-            if (dupe == MatchChoice)
+            if (!List2.Contains(entry))
             {
-                int index = Array.IndexOf(MatchArray, MatchChoice);
-                Console.WriteLine("This is in index " + index);
-                continue;
+                Console.WriteLine(entry + " has not appeared on the list yet!");
+                List2.Add(entry);
+            }
+            else if (List2.Contains(entry))
+            {
+                Console.WriteLine(entry + " has appeared on this list!");
             }
         }
         Console.ReadLine();
-
-        //string[] List = { "entry 1", "entry 2", "entry 3", "entry 4", "entry 5", "entry 2"};
-
-        //foreach (string entry in List)
-        //{
-        //    Console.WriteLine(entry + " has not appeared in the list yet!");
-        //}
-
-        //Console.ReadLine();
     }
 }
 
