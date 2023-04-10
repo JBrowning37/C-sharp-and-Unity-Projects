@@ -20,60 +20,33 @@ namespace TryCatchApplication
                 Console.WriteLine(num);
             }
 
-            Console.WriteLine("Pick a number to divide all the numbers above by:");
-            int divisor = Convert.ToInt32(Console.ReadLine());
-
+            //try block that divides all numbers in list by entered number
+            //There are catches to catch if someone enters a zero, a decimal, or a string
             try
             {
+                //collects a number from user
+                Console.WriteLine("Pick a number to divide all the numbers above by:");
+                int divisor = Convert.ToInt32(Console.ReadLine());
+
                 foreach (int num in numbers)
                 {
                     int quotient = num / divisor;
                     Console.WriteLine(num + " divided by " + divisor + " equals " + quotient);
                 }
             }
-            catch (FormatException ex)
+            catch (FormatException)
             {
                 Console.WriteLine("Please enter a whole number.");
             }
-            catch (DivideByZeroException ex)
+            catch (DivideByZeroException)
             {
                 Console.WriteLine("Please do not divide by zero.");
             }
             
-
+            //Tells the user that they have exited the try/catch block
             Console.WriteLine("Finished with try/catch block");
 
-
-
             Console.ReadLine();
-
-            //try
-            //{
-            //    Console.WriteLine("Pick a number:");
-            //    int numOne = Convert.ToInt32(Console.ReadLine());
-            //    Console.WriteLine("Pick a second number:");
-            //    int numTwo = Convert.ToInt32(Console.ReadLine());
-            //    int numThree = numOne / numTwo;
-            //    Console.WriteLine(numOne + " divided by " + numTwo + " equals " + numThree);
-            //    Console.ReadLine();
-            //}
-            //catch (FormatException ex)
-            //{
-            //    Console.WriteLine("Please type a whole number");
-            //    return;
-            //}
-            //catch (DivideByZeroException ex)
-            //{
-            //    Console.WriteLine("Please don't divide by 0");
-            //}
-            //catch(Exception ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-            //finally
-            //{
-            //    Console.ReadLine();
-            //}
         }
     }
 }
