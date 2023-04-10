@@ -5,7 +5,8 @@ class Program
         static void Main(string[] args)
         {
 
-        //This is a demonstration of a while loop
+        //This is a demonstration of a do while loop
+
         Console.WriteLine("Guess a four letter word:");
         string word = Console.ReadLine();
 
@@ -41,7 +42,6 @@ class Program
                     break;
             }
         } while (!wordGuess);
-
 
 
         //This is a demonstration of a while loop

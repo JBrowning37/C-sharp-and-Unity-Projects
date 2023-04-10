@@ -20,7 +20,6 @@
         Console.WriteLine("Qualified?");
         Console.WriteLine(isAccepted);
 
-
         Console.ReadLine();
         }
     }
