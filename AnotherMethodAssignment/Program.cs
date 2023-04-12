@@ -19,13 +19,13 @@ namespace AnotherMethodAssignment
             {
                 Console.WriteLine("You can enter a second number or leave it blank:");
                 y = int.Parse (Console.ReadLine());
+                Console.WriteLine(instance.options(x, y));
             }
             catch (Exception)
             {
                 Console.WriteLine("You have chosen not to enter a value so the default of 10 will be used.");
+                Console.WriteLine(instance.options(x));
             }
-
-            Console.WriteLine(instance.options(x));
 
             Console.ReadLine();
         }
