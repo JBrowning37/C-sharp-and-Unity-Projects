@@ -12,9 +12,9 @@ namespace MethodClassAssignment
         {
             MathMethod instance = new MathMethod();
 
-            int number1 = 12;
-            int number2 = 3;
-            instance.Output(number1, number2);
+            instance.Output(12, 3);
+
+            instance.Output(number1: 3, number2: 5);
 
             Console.ReadLine();
         }
