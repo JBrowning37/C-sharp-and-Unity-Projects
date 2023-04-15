@@ -14,9 +14,6 @@ namespace MethodClassAssignment
             int result = number1 + number2;
             Console.WriteLine(result);
 
-            //int result = number1 - 2;
-            //Console.WriteLine(number2);
-
         }
 
 
