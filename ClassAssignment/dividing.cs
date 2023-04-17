@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassAssignment
 {
-    static class dividing
+    class dividing
     {
         public static void div(int number, out int result)
         {
@@ -17,6 +17,14 @@ namespace ClassAssignment
         {
             int number2 = 2;
             int result = number / number2;
+        }
+    }
+
+    static class print
+    {
+        public static void printing()
+        {
+            Console.WriteLine("Calling this prints this line.");
         }
     }
 }

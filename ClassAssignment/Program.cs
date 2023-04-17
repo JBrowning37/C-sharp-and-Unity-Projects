@@ -10,7 +10,7 @@ namespace ClassAssignment
     {
         static void Main(string[] args)
         {
-            //dividing instance = new dividing();
+            dividing instance = new dividing();
 
             Console.WriteLine("Enter a number: ");
             int number = Convert.ToInt32(Console.ReadLine());
@@ -20,6 +20,8 @@ namespace ClassAssignment
 
             dividing.div(number);
             Console.WriteLine(result);
+
+            print.printing();
 
             Console.ReadLine();
         }
