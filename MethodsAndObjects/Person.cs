@@ -19,7 +19,7 @@ namespace MethodsAndObjects
 
         public void SayName()
         {
-            Console.WriteLine("Name: " + Fname  + Lname);
+            Console.WriteLine("Name: " + Fname + " " + Lname);
         }
     }
 

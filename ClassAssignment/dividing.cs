@@ -8,12 +8,12 @@ namespace ClassAssignment
 {
     class dividing
     {
-        public static void div(int number, out int result)
+        public void div(int number, out int result)
         {
             result = number / 2;
         }
 
-        public static void div(int number)
+        public void div(int number)
         {
             int number2 = 2;
             int result = number / number2;

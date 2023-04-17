@@ -23,7 +23,5 @@ namespace MainMethodAssignment
             int input = Int32.Parse(z);
             return input * input;
         }
-
-
     }
 }

@@ -9,6 +9,7 @@ namespace CallingMethodsAssignment
     class MathMethods
     {
 
+        //Creates a new classes that are public and takes in an int (x) and returns an int
         public int Square(int x)
         {
             return x * x;
