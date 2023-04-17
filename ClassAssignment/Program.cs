@@ -15,10 +15,10 @@ namespace ClassAssignment
             Console.WriteLine("Enter a number: ");
             int number = Convert.ToInt32(Console.ReadLine());
 
-            dividing.div(number, out int result);
+            instance.div(number, out int result);
             Console.WriteLine(result);
 
-            dividing.div(number);
+            instance.div(number);
             Console.WriteLine(result);
 
             print.printing();
