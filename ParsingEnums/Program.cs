@@ -14,13 +14,12 @@ namespace ParsingEnums
             string day = Console.ReadLine();
             try
             {
-                //DaysOfTheWeek entry = (DaysOfTheWeek)Enum.Parse(typeof(DaysOfTheWeek), day);
                 int underlyingvalue = (int)Enum.Parse(typeof(DaysOfTheWeek), day);
                 Console.WriteLine(underlyingvalue);
             }
             catch
             {
-                Console.WriteLine("Please write a valid day of the week");
+                Console.WriteLine("Please enter a valid day of the week");
             }
 
             Console.ReadLine();
