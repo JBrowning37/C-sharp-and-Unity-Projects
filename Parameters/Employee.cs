@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Parameters
 {
-    public class Employee<T>
+    public class Employee<T> 
     {
+        public List<T> Things { get; set; }
         public int Id { get; set; }
-        public T things { get; set; }
-
+        //public T Things { get; set; }
     }
 }
