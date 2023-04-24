@@ -11,15 +11,12 @@ namespace Parameters
         static void Main(string[] args)
         {
             Employee<string> employee = new Employee<string>();
-            employee.Things = "This is a string";
-
+            employee.Things.Add("This is a string");
+           
             Employee<int> employee2 = new Employee<int>();
-            employee2.Things = 1234;
+            employee2.Things.Add(1234);
 
-            foreach (var Employee in Things)
-            {
-                Console.WriteLine(  );
-            }
+            
 
             Console.ReadLine();
 
