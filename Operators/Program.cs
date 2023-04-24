@@ -14,7 +14,7 @@ namespace Operators
             employee.Id = 1234;
 
             Employee employee2 = new Employee();
-            employee.Id = 12324;
+            employee.Id = 1234;
 
             Console.WriteLine("Are employee1 and employee2's Id numbers the same?");
             Console.WriteLine(employee == employee2);

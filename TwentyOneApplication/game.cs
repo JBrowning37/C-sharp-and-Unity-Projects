@@ -15,7 +15,7 @@ namespace TwentyOneApplication
         public abstract void Play();
         public virtual void ListPlayers()
         {
-            foreach ( string player in Players)
+            foreach (var player in Players)
             {
                 Console.WriteLine(player);
             }
