@@ -11,13 +11,5 @@ namespace Parameters
         public List<T> Things { get; set; }
         public int Id { get; set; }
 
-        public void PrintList()
-        {
-            foreach (var things in Things)
-            {
-                Console.WriteLine(things);
-            }
-        }
-        
     }
 }
